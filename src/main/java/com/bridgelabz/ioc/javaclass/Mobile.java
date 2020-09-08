@@ -1,6 +1,7 @@
 package com.bridgelabz.ioc.javaclass;
 
 
+import com.bridgelabz.ioc.interfaces.Sim;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -10,18 +11,9 @@ public class Mobile {
         ApplicationContext context =new ClassPathXmlApplicationContext("beans.xml");
         System.out.println("context is loaded");
 
-        Airtel air = (Airtel) context.getBean("airtel");
-        air.calling();
-        air.data();
-
-        Airtel airtel = context.getBean("airtel", Airtel.class);
-        airtel.calling();
-        airtel.data();
-
-
-        Vodafone voda = context.getBean("vodafone", Vodafone.class);
-        voda.calling();
-        voda.data();
+        Sim sim = context.getBean("sim", Sim.class);
+        sim.calling();
+        sim.data();
 
     }
 
