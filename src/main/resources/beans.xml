@@ -5,4 +5,8 @@
 
     <bean id="sim" class="com.bridgelabz.ioc.javaclass.Airtel"> </bean>
 
+    <bean id="student" class="com.bridgelabz.dependencyinjection.setterdi.Student">
+        <property name="studentName" value="kalyani"/>
+    </bean>
+
 </beans>
