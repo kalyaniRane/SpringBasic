@@ -2,7 +2,11 @@ package com.bridgelabz.dependencyinjection.setterdi;
 
 public class Student {
 
-    String studentName;
+    private String studentName;
+
+    public void setStudentName(String studentName) {
+        this.studentName = studentName;
+    }
 
     public void displayStudentInfo(){
         System.out.println("Student name: "+studentName);
