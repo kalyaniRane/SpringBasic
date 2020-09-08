@@ -14,6 +14,10 @@ public class Mobile {
         air.calling();
         air.data();
 
+        Airtel airtel = context.getBean("airtel", Airtel.class);
+        airtel.calling();
+        airtel.data();
+
     }
 
 }
