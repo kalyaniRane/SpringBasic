@@ -5,4 +5,6 @@
 
     <bean id="airtel" class="com.bridgelabz.ioc.javaclass.Airtel"> </bean>
 
+    <bean id="vodafone" class="com.bridgelabz.ioc.javaclass.Vodafone"> </bean>
+
 </beans>

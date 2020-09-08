@@ -18,6 +18,11 @@ public class Mobile {
         airtel.calling();
         airtel.data();
 
+
+        Vodafone voda = context.getBean("vodafone", Vodafone.class);
+        voda.calling();
+        voda.data();
+
     }
 
 }
